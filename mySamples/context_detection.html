@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <script src="js/webaudiosvcs.js"></script>
+  <script>
+    window.addEventListener('load', init, false);
+    function init() {
+      WASVCS.init();
+      if (WASVCS.context) {
+        console.log("webaudio supported...");
+      } else {
+        console.log("webaudio not supported....");
+      }
+    }
+  </script>
+</body>
+</html>
